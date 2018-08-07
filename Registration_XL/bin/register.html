@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<form action="D:\BDD_Workspace\Registration\src\NextPage.html"
+		method="post" onsubmit="myFunction(this.form)">
+		First Name: <input type="text" id="fname" placeholder="Fname"pattern="[a-zA_Z]{1,15}" required /><br> 
+			Last Name: <input type="text" id="lname" placeholder="Lname" pattern="[A-za-z]{1,15}"
+			required /><br>
+			 Email ID: <input type="text" id="email"
+			placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required /><br> 
+			Contact Number: <input type="text" id="number"
+			placeholder="Number" pattern="[789][0-9]{9}" required /><br>
+		Address: <input type="text" id="addr" pattern="[a-zA-Z0-9\s]+"
+			required /><br> City: <input type="text" id="city"
+			pattern="[A-Za-z]{1,15}" required /><br> State: <select
+			required>
+			<option value="Select" id="state">Select a State</option>
+			<option value="______">_______________</option>
+			<option value="kerala">Kerala</option>
+			<option value="tamilnadu">TamilNadu</option>
+			<option value="karnataka">Karnataka</option>
+			<option value="himachalpradesh">HimachalPradesh</option>
+		</select> <input type="submit" id="submit" value="Submit">
+
+		<script>
+			function myFunction(form) {
+				alert("Details Validated");
+			}
+		</script>
+	</form>
+
+</body>
+</html>

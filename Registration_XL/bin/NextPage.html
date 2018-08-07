@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+ <form action="D:\BDD_Workspace\Registration\src\Success.html" onsubmit="myFunction(this.form)"> 
+<!-- <form onsubmit="myFunction(this.form)"> -->
+Project Details:	<input type="text" id="details" pattern="[a-zA-Z0-9\s]+" required/><br>
+Project Name:		<input type="text" id="ProjectName" pattern="[a-zA-Z0-9\s]+" required/><br> 
+Client Name:		<input type="text" id="client Name" pattern="[a-zA-Z0-9\s]+" required/><br>
+Team Size:			<input type="text" id="size" required/><br>
+<input type="submit" id="submit" value="Register">
+<script>
+function myFunction(form) {
+    alert("Registration Successful"); 
+}</script>
+</form>
+</body>
+</html>
