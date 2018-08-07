@@ -25,7 +25,7 @@ public class RegisterSteps {
 	static String mail;
 	static String cNum;
 	static String address;
-	static String city;
+	static String city1;
 	static String stateName;
 
 	@Before
