@@ -38,7 +38,7 @@ public class RegisterSteps {
 		mail=sh.getCell(2,0).getContents();
 		cNum=sh.getCell(3,0).getContents();
 		address=sh.getCell(4,0).getContents();
-		city=sh.getCell(5,0).getContents();
+		city1=sh.getCell(5,0).getContents();
 		stateName=sh.getCell(6,0).getContents();
 		
 		
@@ -57,25 +57,25 @@ public class RegisterSteps {
 	@Given("^User enters valid details$")
 	public void user_enters_valid_details() throws Throwable {
 		WebElement fname = driver.findElement(By.id("fname"));
-		fname.sendKeys("sunitha");
+		fname.sendKeys(fName);
 		
 		WebElement lname = driver.findElement(By.id("lname"));
-		lname.sendKeys("sharma");
+		lname.sendKeys(lName);
 		
 		WebElement email = driver.findElement(By.id("email"));
-		email.sendKeys("sunithasharma20@gmail.com");
+		email.sendKeys(mail);
 		
 		WebElement number = driver.findElement(By.id("number"));
-		number.sendKeys("9566247900");
+		number.sendKeys(cNum);
 		
 		WebElement addr = driver.findElement(By.id("addr"));
-		addr.sendKeys("Gopalapuram 2nd street");
+		addr.sendKeys(address);
 		
 		WebElement city = driver.findElement(By.id("city"));
-		city.sendKeys("Chennai");
+		city.sendKeys(city1);
 		
 		WebElement state = driver.findElement(By.xpath("/html/body/form/select"));
-		state.sendKeys("TamilNadu");
+		state.sendKeys(stateName);
 		
 		Thread.sleep(1000);
 	 
